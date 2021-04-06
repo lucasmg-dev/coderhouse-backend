@@ -1,0 +1,26 @@
+{
+  "name": "coderhouse-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "0-readfile.js",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "rxjs": "^6.6.6",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmg-dev/coderhouse-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmg-dev/coderhouse-backend/issues"
+  },
+  "homepage": "https://github.com/lucasmg-dev/coderhouse-backend#readme"
+}

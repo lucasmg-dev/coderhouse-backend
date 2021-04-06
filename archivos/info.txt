@@ -1,0 +1,29 @@
+{
+  "contenidoStr": "{\n  \"name\": \"coderhouse-backend\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"0-readfile.js\",\n  \"dependencies\": {\n    \"esm\": \"^3.2.25\",\n    \"rxjs\": \"^6.6.6\",\n    \"typescript\": \"^4.2.3\"\n  },\n  \"devDependencies\": {},\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/lucasmg-dev/coderhouse-backend.git\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/lucasmg-dev/coderhouse-backend/issues\"\n  },\n  \"homepage\": \"https://github.com/lucasmg-dev/coderhouse-backend#readme\"\n}\n",
+  "contenidoObj": {
+    "name": "coderhouse-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "0-readfile.js",
+    "dependencies": {
+      "esm": "^3.2.25",
+      "rxjs": "^6.6.6",
+      "typescript": "^4.2.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lucasmg-dev/coderhouse-backend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/lucasmg-dev/coderhouse-backend/issues"
+    },
+    "homepage": "https://github.com/lucasmg-dev/coderhouse-backend#readme"
+  }
+}
