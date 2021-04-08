@@ -1,0 +1,10 @@
+Modificar el proyecto anterior para importar moment con import (ES Modules)
+
+Representar la fecha de nacimiento y la actual en formato americano MM/DD/YY
+Ejemplo de salida:
+Hoy es 01/11/21
+Nací el 11/29/68
+Desde mi nacimiento han pasado 52 años.
+Desde mi nacimiento han pasado 19036 días.
+
+Además, el proyecto deberá admitir sólo actualizaciones patches de su dependencia moment
