@@ -1,9 +1,9 @@
 {
   "type": "module",
-  "name": "2",
+  "name": "1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "~2.29.1"
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
   }
 }
