@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <h1>Datos personales</h1>
+      <ul id="datos"></ul>
+    </div>
+    <script>
+      const template = Handlebars.compile(`
+        <li>{{nombre}}</li>
+        <li>{{apellido}}</li>
+        <li>{{edad}}</li>
+        <li>{{email}}</li>
+        <li>{{telefono}}</li>
+      `);
+      const HTML = template({
+        nombre: "Sopita",
+        apellido: "Quick",
+        edad: "31",
+        email: "sopita.quick@gmail.com",
+        telefono: "2994987654",
+      });
+      document.querySelector("#datos").innerHTML = HTML;
+    </script>
+  </body>
+</html>
