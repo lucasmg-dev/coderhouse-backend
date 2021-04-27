@@ -6,7 +6,7 @@ import handlebars from "express-handlebars";
 import mongoose from "mongoose";
 
 import passport from "passport";
-import bCrypt from "bCrypt";
+import bCrypt from "bcrypt";
 import { Strategy as LocalStrategy } from "passport-local";
 import { Strategy as FacebookStrategy } from "passport-facebook";
 import { User } from "./models/user.js";
@@ -24,11 +24,11 @@ app.use(
       ttl: 600,
     }),
     secret: "sh",
-    resave: false,
+    resave: true,
     saveUninitialized: false,
-    rolling: false,
+    rolling: true,
     cookie: {
-      maxAge: 100,
+      maxAge: 6000,
     },
   })
 );
