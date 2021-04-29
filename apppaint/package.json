@@ -1,6 +1,5 @@
 {
-  "type": "module",
-  "name": "sockets",
+  "name": "wspaint",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,8 +8,8 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "Coderhouse",
-  "license": "ISC",
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^3.0.4"
