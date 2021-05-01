@@ -22,8 +22,6 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-
-
 let mostrados = 0
 
 const productos = [
@@ -33,7 +31,6 @@ const productos = [
   { id: 3, nombre: 'empanadas' },
   { id: 4, nombre: 'pizza' },
   { id: 5, nombre: 'harina' },
-
 ]
 
 app.get('/productos', (req, res) => {
@@ -45,8 +42,8 @@ io.on('connection', socket => {
   socket.emit('productos', productos.slice(0, mostrados))
 
   socket.on('boton', () => {
-    socket.emit('productos', productos.slice(0, mostrados))
     mostrados++
+    socket.emit('productos', productos.slice(0, mostrados))
   })
 })
 

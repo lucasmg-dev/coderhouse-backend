@@ -1,18 +1,23 @@
 const socket = io.connect();
 
-const prodStrTemplate = "<li>id: {{id}} - nombre: {{nombre}}</li>"
-const productoTemplate = Handlebars.compile(prodStrTemplate);
-
 document.getElementById('miBoton').addEventListener('click', () => {
   socket.emit('boton')
 })
 
+let productosTemplate
+
 socket.on('productos', async (productos) => {
-  const archivo = await fetch('plantillas/tabla.hbs')
-  const template = await archivo.text()
-  const tablaHtml = Handlebars.compile(template, productos);
+  if (!productosTemplate) {
+    const archivo = await fetch('plantillas/tabla.hbs')
+    const templateText = await archivo.text()
+    productosTemplate = Handlebars.compile(templateText);
+  }
+  const tablaHtml = productosTemplate({ productos });
   document.getElementById('productos').innerHTML = tablaHtml
 })
+
+// const prodStrTemplate = "<li>id: {{id}} - nombre: {{nombre}}</li>"
+// const productoTemplate = Handlebars.compile(prodStrTemplate);
 
 // socket.on('productos', async (productos) => {
 //   const productosHtml = []
