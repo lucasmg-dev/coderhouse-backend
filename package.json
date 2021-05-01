@@ -1,5 +1,6 @@
 {
-  "name": "wspaint",
+  "type": "module",
+  "name": "after12-13",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,9 +10,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "socket.io": "^3.0.4"
+    "express-handlebars": "^5.3.0",
+    "socket.io": "^4.0.1"
   }
 }

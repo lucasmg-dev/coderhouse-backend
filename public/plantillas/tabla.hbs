@@ -1,0 +1,9 @@
+{{#if productos.length }}
+  <ul>
+    {{#each productos}}
+    <li>nombre: {{this.nombre}} - id: {{this.id}}</li>
+    {{/each}}
+  </ul>ul>
+{{else}}
+  <p>nada para mostrar</p>
+{{/if}}
