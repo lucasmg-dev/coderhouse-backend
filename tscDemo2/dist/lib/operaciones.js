@@ -1,0 +1,15 @@
+"use strict";
+// export const sumar = (a:number, b:number) => a + b;
+// export const restar = (a:number, b:number) => a - b;
+// export const multiplicar = (a:number, b:number) => a * b;
+// export const dividir = (a:number, b:number) => a / b;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.dividir = exports.multiplicar = exports.restar = exports.sumar = void 0;
+var sumar = function (a, b) { return a + b; };
+exports.sumar = sumar;
+var restar = function (a, b) { return a - b; };
+exports.restar = restar;
+var multiplicar = function (a, b) { return a * b; };
+exports.multiplicar = multiplicar;
+var dividir = function (a, b) { return a / b; };
+exports.dividir = dividir;
