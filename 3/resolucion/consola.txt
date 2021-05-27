@@ -1,0 +1,37 @@
+Base de datos conectada
+
+1) Actualizar el dni del estudiante Lucas Blanco a 20355875
+{ n: 1, nModified: 0, ok: 1 }
+
+2) Agregar un campo 'ingreso' a todos los documentos con el valor false
+{ n: 10, nModified: 0, ok: 1 }
+
+3) Modificar el valor de 'ingreso' a true para todos los estudiantes que pertenezcan al curso 1A
+{ n: 3, nModified: 3, ok: 1 }
+
+4) Listar los estudiantes que aprobaron (hayan sacado de 4 en adelante) sin los campos de _id y __v
+{"nombre":"Pedro","apellido":"Mei","edad":10,"dni":"31155898","curso":"1A","nota":7,"ingreso":true}
+{"nombre":"Ana","apellido":"Gonzalez","edad":10,"dni":"27651878","curso":"1A","nota":8,"ingreso":true}
+{"nombre":"José","apellido":"Picos","edad":10,"dni":"34554398","curso":"2A","nota":6,"ingreso":false}
+{"nombre":"Lucas","apellido":"Blanco","edad":10,"dni":"20355875","curso":"3A","nota":10,"ingreso":false}
+{"nombre":"María","apellido":"García","edad":10,"dni":"29575148","curso":"1A","nota":9,"ingreso":true}
+{"nombre":"Federico","apellido":"Perez","edad":10,"dni":"320118321","curso":"2A","nota":5,"ingreso":false}
+{"nombre":"Tomas","apellido":"Sierra","edad":10,"dni":"38654790","curso":"2B","nota":4,"ingreso":false}
+{"nombre":"Fabio","apellido":"Pieres","edad":10,"dni":"4315388","curso":"1B","nota":9,"ingreso":false}
+
+5) Listar los estudiantes que posean el campo 'ingreso' en true sin los campos de _id y __v
+{"nombre":"Pedro","apellido":"Mei","edad":10,"dni":"31155898","curso":"1A","nota":7,"ingreso":true}
+{"nombre":"Ana","apellido":"Gonzalez","edad":10,"dni":"27651878","curso":"1A","nota":8,"ingreso":true}
+{"nombre":"María","apellido":"García","edad":10,"dni":"29575148","curso":"1A","nota":9,"ingreso":true}
+
+6) Borrar de la colección de estudiantes, los documentos cuyo campo 'ingreso' esté en true
+{ n: 3, ok: 1, deletedCount: 3 }
+
+7) Listar el contenido de la colección estudiantes utilizando la consola, imprimiendo en cada caso los datos almacenados (sin el campo __v) y su fecha de creación obtenida del ObjectID en formato YYYY/MM/DD HH:mm:SS
+{"_id":"60ae73e092a338606224a8bb","nombre":"José","apellido":"Picos","edad":10,"dni":"34554398","curso":"2A","nota":6,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
+{"_id":"60ae73e092a338606224a8bc","nombre":"Lucas","apellido":"Blanco","edad":10,"dni":"20355875","curso":"3A","nota":10,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
+{"_id":"60ae73e092a338606224a8be","nombre":"Federico","apellido":"Perez","edad":10,"dni":"320118321","curso":"2A","nota":5,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
+{"_id":"60ae73e092a338606224a8bf","nombre":"Tomas","apellido":"Sierra","edad":10,"dni":"38654790","curso":"2B","nota":4,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
+{"_id":"60ae73e092a338606224a8c0","nombre":"Carlos","apellido":"Fernández","edad":10,"dni":"26935670","curso":"3B","nota":2,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
+{"_id":"60ae73e092a338606224a8c1","nombre":"Fabio","apellido":"Pieres","edad":10,"dni":"4315388","curso":"1B","nota":9,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
+{"_id":"60ae73e092a338606224a8c2","nombre":"Daniel","apellido":"Gallo","edad":10,"dni":"37923460","curso":"3B","nota":2,"ingreso":false} -> Fecha creación:  5/26/2021, 1:14:24 PM
