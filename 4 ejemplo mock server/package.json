@@ -1,16 +1,17 @@
 {
   "type": "module",
-  "name": "resolucion",
+  "name": "nodemocking",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.11.15"
+    "express": "^4.17.1",
+    "faker": "^5.4.0"
   }
 }

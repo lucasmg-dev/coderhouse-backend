@@ -1,15 +1,17 @@
 {
-  "name": "resolucion",
+  "type": "module",
+  "name": "enclase",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.11.15"
+    "express": "^4.17.1",
+    "faker": "^5.5.3"
   }
 }
