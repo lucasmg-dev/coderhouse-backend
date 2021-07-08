@@ -1,5 +1,6 @@
 {
-  "name": "ejemploCluster",
+  "type": "commonjs",
+  "name": "ejemplo-compression",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1"
   }
 }

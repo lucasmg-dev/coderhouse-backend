@@ -1,17 +1,18 @@
 {
-  "name": "ejemplo-forever",
+  "type": "commonjs",
+  "name": "ejemplo-log4j",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "prod": "forever start -w server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "forever": "^4.0.1"
+    "log4js": "^6.3.0"
   }
 }
