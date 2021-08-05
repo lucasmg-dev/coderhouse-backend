@@ -1,3 +1,0 @@
-Dividir en capas el servidor del desafío anterior, separando en capas de ruteo/controlador, lógica de negocio y capa de persistencia.
-
-Además de ubicar en cada una de esas capas lo realizado hasta el momento, guardar en persistencia las operaciones realizadas en un array de objetos que contengan: tipo de operación, parámetros, resultado y timestamp.
