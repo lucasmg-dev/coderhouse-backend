@@ -1,0 +1,9 @@
+Crear en base al desafío anterior, otro DAO llamado PersonaFileDAO que contenga los mismos métodos para interactuar con los datos de una persona, pero esta vez persistida en el file system (fs). Utilizar DTO para proveer el id y la fecha/hora de creación en cada objeto persona.
+
+Debe recibir en un método init el nombre del archivo de almacenamiento. En caso que no existir el archivo, debe crearlo conteniendo un array vacío.
+
+Si no se llama al método init, el DAO no debe permitir ninguna operación.
+
+Realizar las pruebas necesarias por código para comprobar el correcto funcionamiento.
+
+La nueva clase creada deben estar en un archivo separado cuyo nombre será similar al de su clase contenida.

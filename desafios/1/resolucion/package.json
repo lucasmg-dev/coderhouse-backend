@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "resolucion",
+  "version": "1.0.0",
+  "main": "TestDAO.js",
+  "scripts": {
+    "start" : "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

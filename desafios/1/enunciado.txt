@@ -1,0 +1,7 @@
+Crear una clase DAO (Data Access Object) llamada PersonaMemDAO que permita almacenar, obtener en forma total y leer/modificar/borrar por id los datos de personas recibidas (nombre, apellido, DNI) utilizando la memoria RAM del servidor.
+
+Debe proveer los métodos necesarios para interactuar con una estructura tipo array de objetos que contenga toda la información. Proveer el id y la fecha/hora de creación y/o modificación para cada persona almacenada. Esta provisión se hará utilizando el concepto de DTO (Data Tranfer Object)
+
+Realizar las pruebas necesarias por código para comprobar el correcto funcionamiento.
+
+Las clase creada deben estar en un archivo con un nombre similar.

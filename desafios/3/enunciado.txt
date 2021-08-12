@@ -1,0 +1,13 @@
+Aplicar el patrón repositorio para el caso de datos de personas (nombre, apellido, DNI), que se guardarán en la collection personas en una base de datos mongoDB llamada datos.
+
+El repositorio estará implementado en una clase PersonaRepository y clases auxiliares, donde se encuentren los métodos para incorporar, actualizar, borrar una persona y buscarlas individualmente y en forma total. Disponer también de un método que me indique cuantas personas hay almacenadas.
+
+Inicializar la base de datos mongoDB usando el cliente MongoClient del MongoDB Node.js Driver (https://www.npmjs.com/package/mongodb)
+
+El constructor de PersonaRepository recibirá el objeto cliente de MongoClient y el nombre de la collection donde se almacenará el repositorio en mongodb.
+
+Probar el repositorio utilizando un código de test llamando a cada acción del repositorio con los datos apropiados ó mediante un menu de test que permita por línea de comandos ejecutar las distintas tareas implementadas en el repositorio, representando en todos los casos los resultados por consola.
+
+Tratar de lograr un alto nivel de abstracción en la programación del patrón utilizando preferentemente typescript para confeccionar el código.
+
+Verificar con un cliente de Mongo(CLI ó GUI) que los datos estén de forma correcta almacenados en la base.

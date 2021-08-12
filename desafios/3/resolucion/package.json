@@ -1,0 +1,23 @@
+{
+  "name": "repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\ts-node index.ts --cmd reemplazar --id 60c415846d9d4e1d94bad46d --nombre Carlos --apellido Perez --DNI 23456789",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/minimist": "^1.2.1",
+    "@types/mongodb": "^3.6.17",
+    "minimist": "^1.2.5",
+    "mongodb": "^3.6.9"
+  }
+}
