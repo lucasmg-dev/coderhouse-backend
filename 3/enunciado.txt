@@ -1,0 +1,3 @@
+﻿Tomando como base el último ejercicio, agregar en este las rutas y vistas del primero: el formulario de ingreso se ofrecerá en /productos/ingreso, quedado así un proyecto en el que conviven una API REST con una API GraphQL.
+
+De esta forma comprobamos que es posible combinar ambos escenarios.

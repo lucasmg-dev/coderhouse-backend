@@ -1,0 +1,15 @@
+﻿Crear un servidor basado en GraphQL.
+
+Realizar un simple query GraphQL que me muestre un mensaje 'ingrese artículo' en la página que ofrece el servidor en su root. 
+
+Dicha página contendrá un formulario para el ingreso de artículos con sus datos correspondientes y un botón para listarlos en forma total. Un artículo se compone del título, texto y autor. La información será enviada como una mutation GraphQL. 
+
+Representar los artículos totales en el navegador como array de objetos utilizando los querys GraphQL y la etiqueta 'pre' de HTML.
+
+El servidor estará escuchando peticiones en el puerto 8080.
+
+Realizar la incorporación de un artículo y la consulta de los artículos almacenados utilizando 'graphiql'
+
+Notas: 
+- En el frontend utilizar fetch post para enviar los querys / mutations al backend.
+- No crear capas adicionales del servidor, la idea es hacer algo muy simple que permita mostrar la operación de GraphQL a nivel de consulta de información total y envío de datos al servidor. Más adelante haremos haremos una implementación completa (con borrado y modificación de información).

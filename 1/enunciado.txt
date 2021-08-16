@@ -1,0 +1,13 @@
+Instalar en forma global el generador de aplicaciones express y generar una aplicación de servidor que utilice handlebars como motor de plantillas.
+
+Modificar dicho servidor creando una apiRest full que me permita incorporar productos con su precio correspondiente y listarlos en forma total. Además debo poder listar, editar y borrar cada producto por su índice en el array que los almacena.
+
+Para agregar un producto, emplearemos un formulario post para la entrada del nombre y precio. Dicho formulario lo ofreceremos en el root del servidor, a través de index.hbs. Representar las respuestas de los request get all y get individual (por índice) en el navegador como array de objetos y en el caso de put/delete (ambos por índice) podemos probarlos con postman.
+
+El servidor estará escuchando peticiones en el puerto 8080.
+
+Verificar el funcionamiento del logger HTTP morgan y al listar los usuarios en forma total, utilizar el módulo debug para mostrarlos en consola.
+
+Notas: 
+- Renombrar .bin/www a .bin/www.js para el correcto funcionamiento de nodemon.
+- No crear capas adicionales del servidor, la idea es hacer algo muy simple, que permita manejar la estructura que propone express generator.
