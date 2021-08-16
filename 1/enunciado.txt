@@ -1,13 +1,15 @@
-Instalar en forma global el generador de aplicaciones express y generar una aplicación de servidor que utilice handlebars como motor de plantillas.
+Crear una arquitectura de servidor node.js MVC que permita ingresar personas por nombre, apellido y DNI mediante un formulario ofrecido a través de sus rutas. 
 
-Modificar dicho servidor creando una apiRest full que me permita incorporar productos con su precio correspondiente y listarlos en forma total. Además debo poder listar, editar y borrar cada producto por su índice en el array que los almacena.
+Por debajo del formulario se representarán en forma dinámica, los datos almacenados en memoria, en forma de tabla.
 
-Para agregar un producto, emplearemos un formulario post para la entrada del nombre y precio. Dicho formulario lo ofreceremos en el root del servidor, a través de index.hbs. Representar las respuestas de los request get all y get individual (por índice) en el navegador como array de objetos y en el caso de put/delete (ambos por índice) podemos probarlos con postman.
+Realizar este proceso utilizando HTML on wire, creando las rutas necesarias:
 
-El servidor estará escuchando peticiones en el puerto 8080.
+- Ruta get '/html-onwire': devolverá una vista dinámica (hbs) que construya el servidor con el formulario y los datos.
+- Ruta post '/html-onwire' usada por el formulario html-onwire 
 
-Verificar el funcionamiento del logger HTTP morgan y al listar los usuarios en forma total, utilizar el módulo debug para mostrarlos en consola.
+Utilizar Handlebars del lado servidor (HTML on wire) para generar la vista dinámica.
 
-Notas: 
-- Renombrar .bin/www a .bin/www.js para el correcto funcionamiento de nodemon.
-- No crear capas adicionales del servidor, la idea es hacer algo muy simple, que permita manejar la estructura que propone express generator.
+Separar el desarrollo del lado servidor en capas: rutas, controlador, negocio y modelo (MVC)
+
+
+

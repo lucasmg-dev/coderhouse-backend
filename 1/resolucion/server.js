@@ -20,14 +20,6 @@ app.set('view engine', 'hbs')
 app.get('/html-onwire', controlador.getHtmlOnwire)
 app.post('/html-onwire', controlador.postHtmlOnwire )
 
-/* -------------------------------------- */
-/*             DATA ON WIRE               */
-/* -------------------------------------- */
-app.get('/data-onwire', controlador.getDataOnwire)
-app.post('/data-onwire', controlador.postDataOnwire)
-app.get('/data-json', controlador.dataJSON)
-
-
 const PORT = 8080
 const server = app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${server.address().port}`)
