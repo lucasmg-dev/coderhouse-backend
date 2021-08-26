@@ -1,0 +1,23 @@
+Realizar un esqueleto de servidor MVC basado en Node.js y express, que utilice GraphQL como lenguaje de Query.
+
+Su desarrollo debe estar separado en capas, basado en una estructura de carpetas y archivos que contenga los módulos necesarios para soportar:
+
+- La capa de ruteo
+- El controlador
+- La lógica de negocio
+- Las validaciones de nuestros datos
+- La capa de persistencia (DAO, DTO)
+
+Realizar una simple query y una mutación para pedir e incorporar palabras respectivamente a un array de strings persistidos en memoria, siguiendo la lógica de la separación del proceso en capas.
+
+Cada palabra que ingrese se debe almacenar en el array dentro de un objeto que contenga un timestamp. Ej.
+[
+    { id: 1, palabra: "Hola", timestamp: 1624450180112 },
+    { id: 2, palabra: "que", timestamp: 1624450189685 },
+    { id: 3, palabra: "tal", timestamp: 1624450195068 } 
+    ...
+]
+
+Con el query en GraphQL se traerá la frase completa en formato string.
+
+Probar la operación con GraphiQL.

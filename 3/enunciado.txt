@@ -1,3 +1,0 @@
-Crear un objeto singleton llamado PrimeraConexion que me permita obtener la hora de conexión,  mediante el método obtenerHora, del primer cliente que se conecte a la ruta '/datos'.
-
-El objeto se debe instanciar dentro de dicha ruta y en cada solicitud debe informar esa hora inicial.
