@@ -1,23 +1,18 @@
-Realizar un esqueleto de servidor MVC basado en Node.js y express, que utilice GraphQL como lenguaje de Query.
+Crear un proyecto backend basado en el framework Sails para realizar consultas y almacenamiento de peliculas por nombre, género y año de estreno. El sistema de persistencia será el default del framework (sistema de archivos)
 
-Su desarrollo debe estar separado en capas, basado en una estructura de carpetas y archivos que contenga los módulos necesarios para soportar:
+Estableceremos las rutas API Rest (Blueprint) para poder:
+- listar todas y cada una de las películas por su id
+- incorporar una película
+- Actualizar una película por su id
+- Borrar una película por su id
 
-- La capa de ruteo
-- El controlador
-- La lógica de negocio
-- Las validaciones de nuestros datos
-- La capa de persistencia (DAO, DTO)
+Dichos request serán realizados mediante postman, comprobando que todos las funciones trabajen correctamente.
 
-Realizar una simple query y una mutación para pedir e incorporar palabras respectivamente a un array de strings persistidos en memoria, siguiendo la lógica de la separación del proceso en capas.
+Luego, probar la API Rest a través de requests get que nos permiten las rutas blueprint de Sails utilizando los parámetros:
+- /find
+- /find/:id
+- /create?nombre=...&genero=...&anio=...
+- /update/:id?nombre=...&genero=...&anio=...
+- /destroy/:id
 
-Cada palabra que ingrese se debe almacenar en el array dentro de un objeto que contenga un timestamp. Ej.
-[
-    { id: 1, palabra: "Hola", timestamp: 1624450180112 },
-    { id: 2, palabra: "que", timestamp: 1624450189685 },
-    { id: 3, palabra: "tal", timestamp: 1624450195068 } 
-    ...
-]
-
-Con el query en GraphQL se traerá la frase completa en formato string.
-
-Probar la operación con GraphiQL.
+Reiniciar el servidor y verificar la persistencia de los datos.

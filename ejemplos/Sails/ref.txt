@@ -1,0 +1,9 @@
+------ Sails ------
+https://sailsjs.com/
+https://programmerblog.net/restful-api-with-sails-js/
+https://sailsjs.com/documentation/reference/web-sockets/resourceful-pub-sub
+
+https://blog.desdelinux.net/introduccion-a-nodejs-sailsjs/
+https://www.npmjs.com/package/sails
+
+npm -g install sails
