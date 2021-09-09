@@ -1,18 +1,15 @@
-Crear un proyecto backend basado en el framework Sails para realizar consultas y almacenamiento de peliculas por nombre, género y año de estreno. El sistema de persistencia será el default del framework (sistema de archivos)
+﻿Crear un proyecto en Deno, configurando localmente Visual Studio Code para que interprete la sintaxis y características de la plataforma.
 
-Estableceremos las rutas API Rest (Blueprint) para poder:
-- listar todas y cada una de las películas por su id
-- incorporar una película
-- Actualizar una película por su id
-- Borrar una película por su id
+Esta aplicación recibirá una cantidad ilimitada de parámetros numéricos y deberá determinar el valor mínimo, el máximo y el promedio entre todos ellos.
 
-Dichos request serán realizados mediante postman, comprobando que todos las funciones trabajen correctamente.
+Los resultados se almacenarán en un archivo llamado resultados.dat, sin utilizar librerías externas, respetando el siguiente formato:
 
-Luego, probar la API Rest a través de requests get que nos permiten las rutas blueprint de Sails utilizando los parámetros:
-- /find
-- /find/:id
-- /create?nombre=...&genero=...&anio=...
-- /update/:id?nombre=...&genero=...&anio=...
-- /destroy/:id
+************************************
+Números: 4,5,33,7,94,56,......
+Mínimo: x
+Máximo: X
+Promedio: Y
+************************************
 
-Reiniciar el servidor y verificar la persistencia de los datos.
+En la consola se representarán los datos de la misma forma pero agregando además color al texto:
+la palabra mínimo y su valor se imprimirán en amarillo, el máximo en rojo y el promedio en verde, todos con fondo blanco.
