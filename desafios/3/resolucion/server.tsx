@@ -4,8 +4,6 @@ import React from "https://dev.jspm.io/react/index.js";
 import ReactDOMServer from "https://dev.jspm.io/react-dom/server.js";
 import { createApp } from "https://deno.land/x/servest@v1.3.1/mod.ts";
 
-const colores: any[] = [];
-
 const app = createApp();
 
 app.handle("/", async (req) => {
